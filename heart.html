@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+	.main_div{
+		width:100vw;
+		height:100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}	
+
+	.center_div{
+		background:#ee5253;
+		width:100px;
+		height:100px;
+		position: relative;
+		transform: rotate(45deg);
+		box-shadow: -3px 3px 15px rgba(0,0,0,0.7);
+		animation:beat 1s linear infinite;
+	}
+
+	.center_div:before{
+		content: '';
+		width:100%;
+		height:100%;
+		background:#ee5253;
+		position:absolute;
+		border-radius: 50%;
+		transform:translateY(-50%);
+	}
+
+	.center_div:after{
+		content: '';
+		width:100%;
+		height:100%;
+		background:#ee5253;
+		position:absolute;
+		border-radius: 50%;
+		transform:translateX(-50%);
+	}
+	
+	@keyframes beat{
+		0%{
+			transform: scale(1) rotate(45deg);
+		}
+		20%{
+			transform: scale(1) rotate(45deg);
+		}
+		40%{
+			transform: scale(1.4) rotate(45deg);
+		}
+		60%{
+			transform: scale(1.2) rotate(45deg);
+		}
+		80%{
+			transform: scale(1.4) rotate(45deg);
+		}
+		100%{
+			transform: scale(1) rotate(45deg);
+		}
+	}	
+	
+</style>
+
+<head>
+	<title>heart aimation</title>
+</head>
+<body>
+
+<section class="main_div">
+	<div class="center_div">
+		
+	</div>
+</section>
+
+</body>
+
+<!--
+
+
+-->
+
+</html>
